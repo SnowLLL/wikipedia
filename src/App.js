@@ -33,8 +33,8 @@ function App() {
     fetch(`https://en.wikipedia.org/w/api.php?action=query&list=search&prop=info&inprop=url&utf8=&format=json&origin=*&srlimit=20&srsearch=${state.value}`)
     .then(res=>res.json())
     .then(result=>{
-      result.query.search.map((item)=>{
-        document.getElementById('searchResult').insertAdjacentHTML('afterend',
+      result.query.search.map(item => {
+        return document.getElementById('searchResult').insertAdjacentHTML('afterend',
               "<p><a href='https://en.wikipedia.org/?curid="+item.pageid+"'><h3>"+item.title+"</h3></a></p>");
       })
     })
