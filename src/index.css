@@ -10,7 +10,7 @@ body {
 }
 
 .App {
-  margin: 10em auto 0em;
+  margin: 7rem auto 0em;
 }
 
 img {
@@ -26,7 +26,7 @@ img {
 
 #searchIcon {
   position: relative;
-  top: 3em;
+  top: 3rem;
 }
 
 p {
@@ -46,10 +46,10 @@ i:hover {
 #searchWords {
   border: groove;
   border-radius: 50px !important;
-  width: 33vw;
-  height: 7vh;
+  width: 60vw;
+  height: 6vh;
   position: relative;
-  top: -6.2em;
+  top: -4rem;
   cursor: text;
   outline-style: none;
 }
@@ -60,8 +60,8 @@ i:hover {
 
 #resetBIcon {
   position: relative;
-  left: -1em;
-  top: -1.8em;
+  left: -1.5rem;
+  top: -4rem;
 }
 
 a {

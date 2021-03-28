@@ -51,7 +51,7 @@ function App() {
          <div id="inputBar"> 
             <form onSubmit={handleSubmit}>
               <input type="text" id="searchWords" name='words' value={state.value} onChange={handleChange}></input>
-              <i className="fas fa-times fa-3x" id="resetBIcon" onClick={reset}></i>
+              <i className="fas fa-times" id="resetBIcon" onClick={reset}></i>
               <div id="searchResult" />
             </form>
          </div>
