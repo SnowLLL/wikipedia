@@ -10,10 +10,23 @@ body {
 }
 
 .App {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin: 10em auto 0em;
+}
+
+img {
+  width: 12em;
+  animation: rotation 20s infinite 2s normal forwards;
+  animation-timing-function: ease-in-out;
+}
+@keyframes rotation {
+  50% {
+    transform: rotate(360deg);
+  }
+}
+
+#searchIcon {
+  position: relative;
+  top: 3em;
 }
 
 p {
@@ -23,11 +36,11 @@ p {
 }
 
 i {
-  color: #66a9c9;
+  color: #20a162;
 }
 
-#searchIcon {
-  animation: trans 3s ease-in-out;
+i:hover {
+  color: #207f4c;
 }
 
 #searchWords {
@@ -51,13 +64,12 @@ i {
   top: -1.8em;
 }
 
-#description {
-  position: relative;
-  top: -7vh;
-}
-
 a {
   font-size: smaller;
-  color: #66a9c9;
-  text-decoration: #20a162;
+  text-decoration: none;
+  color: #20a162;
+}
+
+a:hover {
+  color: #207f4c;
 }
